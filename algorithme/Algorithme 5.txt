@@ -30,7 +30,7 @@ DEBUT
     AFFICHER "Entrer votre note de Anglais (sur 20)"
     LIRE(anglais_20)
 
-    *Note * coefficient*
+    *Note fois coefficient*
 
     AFFICHER "Entrer la coefficient de Mathématique"
     LIRE(coef_math)
