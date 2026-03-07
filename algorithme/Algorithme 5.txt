@@ -2,6 +2,17 @@
 
 *declaration des variables*
 
+coef_math reel
+coef_physique reel
+coef_malagasy reel
+coef_anglais reel
+coef_total reel
+
+math_20 reel
+physique_20 reel
+malagasy_20 reel
+anglais_20 reel
+
 math reel
 physique reel
 malagasy reel
@@ -10,18 +21,37 @@ total reel
 moyenne reel
 
 DEBUT
-    AFFICHER "Entrer votre note de Mathématique"
-    LIRE(math)
-    AFFICHER "Entrer votre note de Physique"
-    LIRE(physique)
-    AFFICHER "Entrer votre note de Malagasy"
-    LIRE(malagasy)
-    AFFICHER "Entrer votre note de Anglais"
-    LIRE(anglais)
+    AFFICHER "Entrer votre note de Mathématique (sur 20)"
+    LIRE(math_20)
+    AFFICHER "Entrer votre note de Physique (sur 20)"
+    LIRE(physique_20)
+    AFFICHER "Entrer votre note de Malagasy (sur 20)"
+    LIRE(malagasy_20)
+    AFFICHER "Entrer votre note de Anglais (sur 20)"
+    LIRE(anglais_20)
+
+    *Note * coefficient*
+
+    AFFICHER "Entrer la coefficient de Mathématique"
+    LIRE(coef_math)
+    AFFICHER"Entrer la coefficient de Physique"
+    LIRE(coef_physique)
+    AFFICHER"Entrer la coefficient de Malagasy"
+    LIRE(coef_malagasy)
+    AFFICHER"Entrer la coefficient de Anglais"
+    LIRE(coef_anglais)
+
+
+    math <- math_20 * coef_math
+    physique <- physique_20 * coef_physique
+    malagasy <- malagasy_20 * coef_malagasy
+    anglais <- anglais_20 * coef_anglais
+
+    coef_total <- coef_math + coef_physique + coef_malagasy + coef_anglais
 
     total <- math + physique + malagasy + anglais
 
-    moyenne <- total / 4
+    moyenne <- total / coef_total
 
     AFFICHER "Votre moyenne est de"
     AFFICHER(total)
