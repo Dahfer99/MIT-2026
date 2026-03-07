@@ -1,0 +1,17 @@
+*Calcul de la vitesse moyenne d'une voiture*
+
+v reel *vitesse*
+d entier *distance*
+t entier *durée du trajet*
+
+DEBUT
+    AFFICHER "Entrer la distance parcouru par la voiture (En km)"
+    LIRE(d)
+    AFFICHER "Entrer la durée du trajet (En heure)"
+    LIRE(t)
+
+    v <- d / t
+
+    AFFICHER "La vitesse moyenne de la voiture est de"
+    AFFICHER(v)
+FIN

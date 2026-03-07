@@ -1,0 +1,19 @@
+*calcul d'âge*
+*declaration des variables*
+
+annee_naissance entier
+annee_actuelle entier
+age entier
+
+DEBUT
+    AFFICHER "Entrer votre année de naissance"
+    LIRE(annee_naissance)
+    AFFICHER "Entrer l'année actuelle"
+    LIRE(annee_actuelle)
+
+    age <- annee_actuelle - annee_naissance
+
+    AFFICHER "Vous avez"
+    AFFICHER(age)
+    AFFICHER "ans"
+FIN

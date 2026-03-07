@@ -1,0 +1,20 @@
+*Calcul du volume d'un parallélépipède réctangle*
+
+L entier
+l entier
+h entier
+v entier
+
+DEBUT
+    AFFICHER "Entrer la longueur en cm"
+    LIRE(L)
+    AFFICHER "Entrer la largeur en cm"
+    LIRE(l)
+    AFFICHER "Entrer la hauteur en cm"
+    LIRE(h)
+
+    v <- L * l * h
+
+    AFFICHER "La volume du parallélépipède en cm^3 est de"
+    AFFICHER(v)
+FIN

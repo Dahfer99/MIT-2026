@@ -1,0 +1,12 @@
+*Algorithme simple de salutation*
+
+*Declaration de variables*
+nom caractere
+
+DEBUT
+    AFFICHER "Entrer votre nom"
+    LIRE(nom)
+    AFFICHER "Bonjour "
+    AFFICHER(nom)
+    AFFICHER "Bienvenue sur le premier algorithme"
+FIN

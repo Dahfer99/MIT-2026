@@ -1,0 +1,14 @@
+*Convertisseur de pouce en centimètre*
+* 1in = 2.54cm *
+
+*déclaration des variables*
+a reel
+resultat reel
+
+DEBUT
+    AFFICHER "Entrer une valeur en pouce (inch)"
+    LIRE(a)
+    resultat <- a * 2.54
+    AFFICHER "La valeur de a en centimètre est"
+    AFFICHER(resultat)
+FIN

@@ -1,0 +1,25 @@
+*Calcul de la tension d'une ressort*
+* Te = k * al *
+* al = lf - li*
+
+Te reel
+k reel *constante de raideur*
+allongement reel
+longueur_finale reel
+longueur_initiale reel
+
+DEBUT
+    AFFICHER "Entrer la valeur du constante de raideur en N/m"
+    LIRE(k)
+    AFFICHER "Entrer la longueur finale du ressort en mètre"
+    LIRE(longueur_finale)
+    AFFICHER "Entrer la longueur à vide du ressort en mètre"
+    LIRE(longueur_initiale)
+
+    allongement <- longueur_finale - longueur_initiale
+
+    Te <- k * allongement
+
+    AFFICHER "La valeur de la tension de ressort en Newton est de"
+    AFFICHER(Te)
+FIN

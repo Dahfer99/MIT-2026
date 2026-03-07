@@ -1,0 +1,21 @@
+*Résolution d'une équation du premier degré*
+
+a reel
+b reel
+c reel
+x reel
+
+DEBUT
+    AFFICHER "L'équation du premier degré est de la forme ax+b=c"
+    AFFICHER "Entrer la coefficient a"
+    LIRE(a)
+    AFFICHER "Entrer le constant b"
+    LIRE(b)
+    AFFICHER "Entrer le constant c"
+    LIRE(c)
+
+    x <-  (c - b) / a
+
+    AFFICHER "La solution de l'équation est "
+    AFFICHER(x)
+FIN

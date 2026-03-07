@@ -1,0 +1,20 @@
+*Calcul du prix du riz*
+
+
+*declaration des variables*
+
+poids reel
+prix reel
+total reel
+
+DEBUT
+    AFFICHER "Entrer le poids du riz acheté (En kilogrammes)"
+    LIRE(poids)
+    AFFICHER "Entrer le prix d'un kilo de la variété du riz acheté"
+    LIRE(prix)
+
+    total <- poids * prix
+
+    AFFICHER "Le prix total est de"
+    AFFICHER(total)
+FIN

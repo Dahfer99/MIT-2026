@@ -1,0 +1,26 @@
+*Coordonées d'un point où une courbe traverse*
+
+a reel
+b reel
+c reel
+x reel
+y reel
+
+DEBUT
+    AFFICHER "La fonction représentée par la courbe (C) est de la forme y=ax^2+bx+c où f(x)=y"
+    AFFICHER "Elle passe par un point quelconque d'abscisse x et d'ordonnée y"
+    AFFICHER "Entrer a"
+    LIRE(a)
+    AFFICHER "Entrer b"
+    LIRE(b)
+    AFFICHER "Entrer c"
+    LIRE(c)
+    AFFICHER "Entrer x"
+    LIRE(x)
+
+    y <- a * (x * x) + b * x + c
+    AFFICHER "La courbe (C) passe par un point A d'abscisse"
+    AFFICHER(x)
+    AFFICHER "et d'ordonée"
+    AFFICHER(y)
+FIN

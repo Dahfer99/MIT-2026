@@ -1,0 +1,28 @@
+*Calcul de moyenne*
+
+*declaration des variables*
+
+math reel
+physique reel
+malagasy reel
+anglais reel
+total reel
+moyenne reel
+
+DEBUT
+    AFFICHER "Entrer votre note de Mathématique"
+    LIRE(math)
+    AFFICHER "Entrer votre note de Physique"
+    LIRE(physique)
+    AFFICHER "Entrer votre note de Malagasy"
+    LIRE(malagasy)
+    AFFICHER "Entrer votre note de Anglais"
+    LIRE(anglais)
+
+    total <- math + physique + malagasy + anglais
+
+    moyenne <- total / 4
+
+    AFFICHER "Votre moyenne est de"
+    AFFICHER(total)
+FIN
