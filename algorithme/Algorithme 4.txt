@@ -1,8 +1,8 @@
 *Calcul de la vitesse moyenne d'une voiture*
 
 v reel *vitesse*
-d entier *distance*
-t entier *durée du trajet*
+d reel *distance*
+t reel *durée du trajet*
 
 DEBUT
     AFFICHER "Entrer la distance parcouru par la voiture (En km)"
