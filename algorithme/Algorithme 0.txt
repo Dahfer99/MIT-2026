@@ -1,7 +1,7 @@
 *Algorithme simple de salutation*
 
 *Declaration de variables*
-nom caractere
+nom chaine
 
 DEBUT
     AFFICHER "Entrer votre nom"
