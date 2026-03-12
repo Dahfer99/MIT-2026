@@ -30,7 +30,7 @@
                     </item>
                     <item algoitem="FIN_POUR" code="14#finpour"/>
                 </item>
-                <item algoitem="SI (premier=0) ALORS" code="6#premier=0">
+                <item algoitem="SI (premier==0) ALORS" code="6#premier==0">
                     <item algoitem="DEBUT_SI" code="7#debutsi"/>
                     <item algoitem="AFFICHER n" code="3#n#0#pasliste"/>
                     <item algoitem="AFFICHER &quot; n'est pas premier&quot;" code="4# n'est pas premier#0"/>
