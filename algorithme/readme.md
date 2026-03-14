@@ -29,3 +29,10 @@
   13. Compteur de diviseur d'un entier
   14. Vérification d'un nombre premier
   15. Somme des factorielles (n! + (n-1)! + ... + 3! + 2!)
+
+### III. Devoir du 13/03/2026
+   - Algorithme demandant à l'utilisateur d'entrer un tableau puis de complété ce tableau
+   - Ensuite chaque donnée est maintenant traité
+     1. Calcul de la somme et moyenne des chiffres entrées
+     2. Détermination du minimum et maximum
+     3. Arrangement par ordre croissant et décroissant
