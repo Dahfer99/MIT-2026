@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Algo>
-    <description courant="TANT_QUE (i >=0) FAIRE" texte=""/>
+    <description courant="pmin PREND_LA_VALEUR 1" texte=""/>
     <extension extnom="inactif"/>
     <fonction fctcode="" fctetat="inactif"/>
     <F2 F2defaut="" F2etat="inactif" F2lignes="" F2para=""/>
@@ -50,6 +50,7 @@
         <item algoitem="AFFICHER moyenne" code="3#moyenne#1#pasliste"/>
         <item algoitem="//Calcul du minimum" code="19#Calcul du minimum"/>
         <item algoitem="min PREND_LA_VALEUR t[0]" code="5#min#t[0]#pasliste"/>
+        <item algoitem="pmin PREND_LA_VALEUR 1" code="5#pmin#1#pasliste"/>
         <item algoitem="i PREND_LA_VALEUR 0" code="5#i#0#pasliste"/>
         <item algoitem="temp PREND_LA_VALEUR t[i]" code="5#temp#t[i]#pasliste"/>
         <item algoitem="TANT_QUE (min &lt;= (temp+1) ET i != nbr) FAIRE" code="15#min &lt;= (temp+1) ET i != nbr">
@@ -73,6 +74,7 @@
         <item algoitem="max PREND_LA_VALEUR t[limit]" code="5#max#t[limit]#pasliste"/>
         <item algoitem="i PREND_LA_VALEUR limit" code="5#i#limit#pasliste"/>
         <item algoitem="temp PREND_LA_VALEUR t[i]" code="5#temp#t[i]#pasliste"/>
+        <item algoitem="pmax PREND_LA_VALEUR nbr" code="5#pmax#nbr#pasliste"/>
         <item algoitem="TANT_QUE (max>=(temp-1) ET i!=0) FAIRE" code="15#max>=(temp-1) ET i!=0">
             <item algoitem="DEBUT_TANT_QUE" code="16#debuttantque"/>
             <item algoitem="temp PREND_LA_VALEUR t[i]" code="5#temp#t[i]#pasliste"/>
