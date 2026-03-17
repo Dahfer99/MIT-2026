@@ -1,0 +1,36 @@
+*Calcul du pgcd et du ppcm*
+variables
+    x entier
+    y entier
+    a entier
+    b entier
+    r entier
+    pgcd entier
+    ppcm entier
+
+DEBUT
+    AFFICHER("Entrer a")
+    LIRE(x)
+    AFFICHER("Entrer b")
+    LIRE(y)
+    SI( x > y )
+        ALORS 
+        a <- x
+        b <- y
+        SINON
+        a <- y
+        b <- x
+    FINSI
+    r <- 1
+
+    TANTQUE ( r != 0 )
+    r <- a % b
+    a <- b
+    b <- r
+    FINTANTQUE
+    pgcd <- a 
+    ppcm <- ( x * y ) / pgcd
+
+    AFFICHER("PGCD = ", pgcd)
+    AFFICHER("PPCM = ", ppcm)
+FIN
