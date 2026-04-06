@@ -19,10 +19,10 @@
       LIRE(A[i])
     FINPOUR
 
-    POUR(i<-0, i<n, i<-i+1)
+    POUR(i<-0, i<m, i<-i+1)
       ALORS 
-      AFFICHER("Entrer la valeur ", i, " du tableaux A")
-      LIRE(A[i])
+      AFFICHER("Entrer la valeur ", i, " du tableaux B")
+      LIRE(B[i])
     FINPOUR
 
   AFFICHER("Les éléments du tableaux A sont : ")

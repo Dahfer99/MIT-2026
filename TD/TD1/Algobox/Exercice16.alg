@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Algo>
-    <description courant="AFFICHER somme" texte="Somme des factorielles&#xa;"/>
+    <description courant="FIN_SINON" texte="Somme des factorielles&#xa;"/>
     <extension extnom="inactif"/>
     <fonction fctcode="" fctetat="inactif"/>
     <F2 F2defaut="" F2etat="inactif" F2lignes="" F2para=""/>
