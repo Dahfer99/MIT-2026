@@ -143,7 +143,7 @@ int main(){
         printf("Enter la dimension du tableaux (entre 2 et 50) : ");
         scanf("%d", &n);
     }
-    while (n <= 1 && n > 50);
+    while (n <= 1 || n > 50);
 
     somme = 0;
 
