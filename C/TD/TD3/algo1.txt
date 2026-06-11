@@ -1,0 +1,40 @@
+VARIABLES
+n,i,change,tmp : entier
+t[10] : tableaux entier
+
+DEBUT
+
+    FAIRE
+	AFFICHER("Entrer le nombre maximal du tableaux :")
+	LIRE(n)
+    TANTQUE(n <= 0 OU n >= 50)
+
+    POUR(i <- 0 , i < n , i <- i+1)
+	AFFICHER("Entrer une valeur dans le tableau " i)
+	LIRE(t[i])
+    FINPOUR
+
+    AFFICHER("Le tableaux initiale : ")
+    POUR(i <- 0 , i < n , i <- i+1)
+	AFFICHER(t[i])
+    FINPOUR
+
+    change <- 1
+    TANTQUE(change == 1)
+	change <- 0
+	POUR(i <- 0 , i < n-1 , i <- i+1)
+	    SI(( t[i] % 2 ) == 1 ET ( t[i+1] % 2 == 0 ))
+		tmp <- t[i]
+		t[i] <- t[i+1]
+		t[i+1] <- tmp
+		change <- 1
+	    FINSI
+	FINPOUR
+    FINTANTQUE
+    
+    AFFICHER("Le tableaux initiale : ")
+    POUR(i <- 0 , i < n , i <- i+1)
+	AFFICHER(t[i])
+    FINPOUR
+
+FIN

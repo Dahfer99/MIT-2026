@@ -1,6 +1,8 @@
 #include<stdio.h>
 //Prototype des fonctions de Exo 1
 int getnumber(int x);
+void printarr(int arr[], int limit);
+int somme(int arr[], int limit);
 void fillarr(int limit, int arr[]);
 
 //Prototype des fonctions de Exo 2
@@ -15,6 +17,20 @@ void splitarr(int limit, int arr[], int *TPOS, int *TNEG);
 //Prototype des fonctions de Exo 5
 void flip(int limit, int T[]);
 
+int somme(int arr[], int limit){
+    int result=0;
+    for(int i=O; i<limit; i++){
+	result += arr[i];
+    }
+    return result;
+}
+
+void printarr(int arr[], int limit){
+    for(int i=0; i<limit;i++){
+	printf("%d\t", arr[i]);
+    }
+    printf("\n");
+}
 
 //Fonction Exo1
 int getnumber(int x)
@@ -36,9 +52,9 @@ void fillarr(int limit, int arr[])
     {
         printf("Entrer une valeur dans le tableaux n° %d : ", i);
         scanf("%d", &arr[i]);
-        total += arr[i];
+        //total += arr[i];
     }
-    printf("Somme = %d\n",total);
+    //printf("Somme = %d\n",total);
 }
 
 //Fonction Exo2
@@ -87,31 +103,31 @@ void erase0(int *limit, int arr[])
     }
     *limit -= c;
 
-    printf("Le résultat après supression des 0\n");
+    /*printf("Le résultat après supression des 0\n");
     for(i=0; i<*limit; i++){
         printf("%d\t", arr[i]);
     }
-    printf("\n");
+    printf("\n");*/
 }
 
 //Fonction Exo4
-void splitarr(int limit, int arr[], int *TPOS, int *TNEG)
+void splitarr(int limit, int arr[], int *TPOS, int *TNEG, int *j, int *k)
 {
-    int j = 0;
-    int k = 0;
+    *j = 0;
+    *k = 0;
     int i;
     for(i=0; i<limit; i++){
         if(arr[i]<0){
             *(TNEG+j) = arr[i];
-            j++;
+            *j++;
         }
         else {
             *(TPOS+k) = arr[i];
-            k++;
+            *k++;
         }
     }
 
-    printf("Les tableaux des valeurs négatifs : \n");
+    /* printf("Les tableaux des valeurs négatifs : \n");
     for(i=0; i<j; i++){
         printf("%d\t", *(TNEG+i));
     }
@@ -120,7 +136,7 @@ void splitarr(int limit, int arr[], int *TPOS, int *TNEG)
     for(i=0; i<k; i++){
         printf("%d\t", *(TPOS+i));
     }
-    printf("\n");
+    printf("\n"); */
 
 }
 
@@ -137,17 +153,18 @@ void flip(int limit, int T[])
         c++;
     }
 
-    printf("Le tableaux inverse est : \n");
+    /*printf("Le tableaux inverse est : \n");
     for(i=0; i<limit; i++){
         printf("%d\t", T[i]);
     }
-    printf("\n");
+    printf("\n");*/
 }
 
 
 //main
 int main()
 {
+    int j,k;
     int t[50], n, tneg[50], tpos[50];
 
     //exo 1
@@ -161,7 +178,7 @@ int main()
     erase0(&n,t);
 
     //exo 4
-    splitarr(n, t, tpos, tneg);
+    splitarr(n, t, tpos, tneg, &j, &k);
 
     //exo 5
     flip(n,t);

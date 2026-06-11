@@ -1,0 +1,34 @@
+VAARIABLES
+n,i,pos,val,tmp : entier
+t[20] : tableaux entier
+
+DEBUT
+
+    FAIRE
+	AFFICHER "Entrer le nombre maximale du tableaux"
+	LIRE n
+    TANTQUE(n <=0 OU n >= 20) 
+
+    POUR(i <- 0 , i < n , i <- i+1)
+	AFFICHER "Entrer une valeur dans le tableau " i
+	LIRE t[i]
+    FINPOUR
+
+    AFFICHER("Le tableaux initiale : ")
+    POUR(i <- 0 , i < n , i <- i+1)
+	AFFICHER(t[i])
+    FINPOUR
+
+    AFFICHER "Entrer la position et la valeur a entrer dans le tableaux"
+    LIRE pos val
+
+    POUR(i <- 0, i < n, i++)
+	SI i == pos 
+	    tmp <- t[i+1]
+	    t[i+1] <- t[i]
+	    t[i] <- val
+	    
+	FINSI
+    FINPOUR    
+
+FIN
